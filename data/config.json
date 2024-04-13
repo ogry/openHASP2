@@ -1,0 +1,77 @@
+{
+    "wifi": {
+        "ssid": "testeles.guifi.net",
+        "pass": "********"
+    },
+    "mqtt": {
+        "host": "192.168.2.12",
+        "user": "mqtt_user",
+        "pass": "********",
+        "topic": {
+            "node": "hasp/%hostname%/%topic%",
+            "group": "hasp/plates/%topic%",
+            "broadcast": "hasp/broadcast/%topic%",
+            "hass": "homeassistant/status"
+        },
+        "port": 1883,
+        "name": "plate1"
+    },
+    "telnet": {
+        "enable": 1,
+        "port": 23
+    },
+    "mdns": {
+        "enable": 1
+    },
+    "http": {
+        "enable": true,
+        "port": 80,
+        "user": "",
+        "pass": "********"
+    },
+    "gpio": {
+        "config": [
+            2147680260,
+            2147745808,
+            2147811345,
+            82837504,
+            0,
+            0,
+            0,
+            0
+        ]
+    },
+    "debug": {
+        "ansi": 0,
+        "baud": 115200,
+        "tele": 300
+    },
+    "gui": {
+        "idle1": 60,
+        "idle2": 120,
+        "bckl": 21,
+        "bcklinv": 0,
+        "rotate": 0,
+        "cursor": 0,
+        "invert": 0,
+        "calibration": [
+            3765,
+            263,
+            3748,
+            3670,
+            372,
+            290,
+            455,
+            3694
+        ]
+    },
+    "hasp": {
+        "startpage": 1,
+        "startdim": 128,
+        "theme": 1,
+        "color1": "#00b6ff",
+        "color2": "#ff9962",
+        "font": "",
+        "pages": "/pages.jsonl"
+    }
+}
